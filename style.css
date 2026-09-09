@@ -184,20 +184,9 @@ nav.main a:focus-visible { color: var(--terracotta-deep); }
 
 /* ---------- Hero (homepage) ---------- */
 .hero {
-  padding: 30px 0 44px;
+  padding: 30px 0 48px;
 }
-.hero .wrap {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 22px;
-}
-.hero-photo {
-  border-radius: var(--radius);
-  aspect-ratio: 16/7;
-  max-height: 200px;
-  overflow: hidden;
-  position: relative;
-}
+.hero .wrap { max-width: 640px; }
 .hero-copy .eyebrow {
   color: var(--terracotta-deep);
   font-size: 15px;
@@ -214,12 +203,6 @@ nav.main a:focus-visible { color: var(--terracotta-deep); }
   color: var(--ink-soft);
   font-size: 17px;
   max-width: 46ch;
-}
-
-@media (min-width: 860px) {
-  .hero .wrap { grid-template-columns: 1.05fr 0.95fr; align-items: center; }
-  .hero-copy { order: 1; }
-  .hero-photo { order: 2; aspect-ratio: 4/5; max-height: none; }
 }
 
 /* ---------- Photo placeholder system ---------- */
