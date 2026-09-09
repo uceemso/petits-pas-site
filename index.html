@@ -3,19 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Les petits bugs — le journal des parents curieux</title>
-<meta name="description" content="Des idées, des conseils et des petites aventures pour accompagner les grands moments du quotidien. Parentalité, sommeil, alimentation, voyages en famille.">
+<title>Les petits bugs | Le journal des parents curieux</title>
+<meta name="description" content="Un petit journal parental pour comprendre les grandes émotions, poser des limites et trouver des idées concrètes pour le quotidien.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://VOTRE-SITE.netlify.app/">
+<link rel="canonical" href="https://lespetitsbugs.netlify.app/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Les petits bugs — le journal des parents curieux">
-<meta property="og:description" content="Des idées, des conseils et des petites aventures pour accompagner les grands moments du quotidien.">
-<meta property="og:url" content="https://VOTRE-SITE.netlify.app/">
+<meta property="og:title" content="Les petits bugs | Le journal des parents curieux">
+<meta property="og:description" content="Des idées concrètes pour traverser les petits bugs du quotidien avec nos enfants.">
+<meta property="og:url" content="https://lespetitsbugs.netlify.app/">
 <meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="apple-mobile-web-app-title" content="Petits bugs">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#FAF6EF">
 <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,20 +21,19 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header class="site">
-  <div class="wrap">
+  <div class="wrap header-inner">
     <a href="index.html" class="logo">
-      <img src="logo-full.png" alt="Les petits bugs — le journal des parents curieux" class="logo-img">
+      <img src="logo-full.png" alt="Les petits bugs" class="logo-img">
     </a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" onclick="document.querySelector('nav.main').classList.toggle('open'); this.setAttribute('aria-expanded', document.querySelector('nav.main').classList.contains('open'))">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 5h14M2 9h14M2 13h14" stroke="#2B2924" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" onclick="toggleNav(this)">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 5h14M2 9h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
     </button>
     <nav class="main">
       <a href="index.html" class="active">Accueil</a>
       <a href="index.html#articles">Parentalité</a>
       <a href="a-propos.html">À propos</a>
-      <button class="icon-btn" aria-label="Rechercher" onclick="document.getElementById('search-panel').classList.toggle('open'); document.getElementById('search-input').focus()">
+      <button class="icon-btn" aria-label="Rechercher" onclick="toggleSearch()">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.6"/><path d="M13 13L17 17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
       </button>
     </nav>
@@ -45,7 +42,9 @@
 
 <div id="search-panel">
   <div class="wrap">
-    <input type="text" id="search-input" placeholder="Chercher un article (sommeil, alimentation, limites…)" oninput="filterCards(this.value)">
+    <label for="search-input" class="sr-only">Rechercher un article</label>
+    <input type="search" id="search-input" placeholder="Chercher un article : émotions, limites, sommeil…" oninput="filterCards(this.value)">
+    <p id="search-empty" class="search-empty" hidden>Aucun article ne correspond à cette recherche.</p>
   </div>
 </div>
 
@@ -53,10 +52,10 @@
   <div class="wrap">
     <div class="hero-copy">
       <p class="eyebrow">Le journal des parents curieux</p>
-      <h1>Bien grandir, à son rythme.</h1>
-      <p class="lede">Des idées, des conseils et des petites aventures pour accompagner les grands moments du quotidien.</p>
+      <h1>Les petits bugs du quotidien.</h1>
+      <p class="lede">Des idées simples pour comprendre nos enfants, traverser les moments compliqués et faire au mieux. Sans chercher à être parfaits.</p>
       <a href="#articles" class="btn">Lire les articles
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
   </div>
@@ -65,48 +64,94 @@
 <section class="magazine" id="articles">
   <div class="wrap">
     <div class="section-head">
-      <h2>Nos articles</h2>
-      <a href="index.html#articles">Voir tous les articles →</a>
+      <div>
+        <p class="section-kicker">À lire maintenant</p>
+        <h2>Nos articles</h2>
+      </div>
+      <span class="article-count" id="article-count">2 articles</span>
     </div>
 
     <div class="mag-grid" id="card-grid">
-
-      <a href="article-limites.html" class="card featured" data-search="discipline positive limites non gabriel bras de fer">
+      <a href="article-emotions.html" class="card featured" data-search="émotions emotion colère tristesse frustration enfant parents connexion écouter comprendre">
         <div class="inner">
-          <div class="photo-wrap">
-            <img src="illustration-limites.jpg" alt="Un grand frère joue avec un chien en peluche devant sa petite sœur, assise sur une couverture de pique-nique dans un jardin." style="width:100%;height:100%;object-fit:cover;">
+          <div class="photo-wrap emotion-art" aria-hidden="true">
+            <div class="emotion-scene">
+              <span class="emotion-sun"></span>
+              <span class="emotion-parent"></span>
+              <span class="emotion-child"></span>
+              <span class="emotion-heart">♡</span>
+            </div>
           </div>
           <div>
-            <span class="cat">Discipline positive</span>
-            <h3>Et si on disait moins « non » à nos enfants ?</h3>
-            <p class="excerpt">Trois façons de transformer un « non » en alternative claire, sans bras de fer, à travers une scène vécue avec Gabriel et sa petite sœur.</p>
-            <span class="date">15 janvier 2026</span>
+            <span class="cat">Émotions</span>
+            <h3>Avant de corriger, commençons par écouter</h3>
+            <p class="excerpt">Quand un enfant est bouleversé, il n’a pas toujours besoin d’une solution. Il a souvent besoin que son émotion soit reconnue.</p>
+            <span class="date">10 septembre 2026 · 4 min</span>
           </div>
         </div>
       </a>
 
+      <a href="article-limites.html" class="card" data-search="discipline positive limites non gabriel bras de fer alternatives choix comportement">
+        <div class="photo-wrap">
+          <img src="illustration-limites.jpg" alt="Un grand frère joue avec un chien en peluche devant sa petite sœur dans un jardin." style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <span class="cat">Discipline positive</span>
+        <h3>Et si on disait moins « non » à nos enfants ?</h3>
+        <p class="excerpt">Trois façons de poser une limite sans entrer dans le bras de fer.</p>
+        <span class="date">15 janvier 2026 · 6 min</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="try-today">
+  <div class="wrap">
+    <div class="try-box">
+      <div>
+        <span class="try-label">Une idée à tester aujourd’hui</span>
+        <h2>Avant d’expliquer, essayez de nommer.</h2>
+        <p>« Tu es vraiment déçu. Tu avais très envie de faire ça. »</p>
+      </div>
+      <a href="article-emotions.html" class="text-link">Lire l’article →</a>
     </div>
   </div>
 </section>
 
 <footer class="site">
-  <div class="wrap">
+  <div class="wrap footer-inner">
     <a href="index.html" class="logo footer-logo">
       <img src="logo-mark.png" alt="" class="footer-mark">
       <span class="text">Les petits bugs</span>
     </a>
+    <p>Un petit journal pour les grands moments du quotidien.</p>
   </div>
 </footer>
 
 <script>
-  function filterCards(query) {
-    var q = query.trim().toLowerCase();
-    document.querySelectorAll('#card-grid .card').forEach(function (card) {
-      var haystack = (card.dataset.search || '') + ' ' + card.textContent.toLowerCase();
-      card.style.display = haystack.indexOf(q) !== -1 ? '' : 'none';
-    });
-  }
+function toggleNav(button) {
+  const nav = document.querySelector('nav.main');
+  const open = nav.classList.toggle('open');
+  button.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+function toggleSearch() {
+  const panel = document.getElementById('search-panel');
+  const input = document.getElementById('search-input');
+  panel.classList.toggle('open');
+  if (panel.classList.contains('open')) input.focus();
+}
+function filterCards(query) {
+  const q = query.trim().toLowerCase();
+  const cards = document.querySelectorAll('#card-grid .card');
+  let visible = 0;
+  cards.forEach(function(card) {
+    const haystack = (card.dataset.search || '') + ' ' + card.textContent.toLowerCase();
+    const match = haystack.indexOf(q) !== -1;
+    card.style.display = match ? '' : 'none';
+    if (match) visible++;
+  });
+  document.getElementById('search-empty').hidden = visible !== 0 || q === '';
+  document.getElementById('article-count').textContent = q ? visible + (visible === 1 ? ' article' : ' articles') : '2 articles';
+}
 </script>
-
 </body>
 </html>

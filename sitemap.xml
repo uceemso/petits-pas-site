@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://VOTRE-SITE.netlify.app/</loc></url>
-  <url><loc>https://VOTRE-SITE.netlify.app/article-limites.html</loc></url>
-  <url><loc>https://VOTRE-SITE.netlify.app/a-propos.html</loc></url>
+  <url><loc>https://lespetitsbugs.netlify.app/</loc></url>
+  <url><loc>https://lespetitsbugs.netlify.app/article-emotions.html</loc></url>
+  <url><loc>https://lespetitsbugs.netlify.app/article-limites.html</loc></url>
+  <url><loc>https://lespetitsbugs.netlify.app/a-propos.html</loc></url>
 </urlset>

@@ -3,97 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TITRE DE L'ARTICLE — Les petits bugs</title>
-<meta name="description" content="Une phrase qui résume l'article.">
+<title>TITRE DE L'ARTICLE | Les petits bugs</title>
+<meta name="description" content="DESCRIPTION COURTE DE L'ARTICLE.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://VOTRE-SITE.netlify.app/article-NOM-DU-FICHIER.html">
+<link rel="canonical" href="https://lespetitsbugs.netlify.app/article-NOM.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TITRE DE L'ARTICLE — Les petits bugs">
-<meta property="og:description" content="Une phrase qui résume l'article.">
-<meta property="og:url" content="https://VOTRE-SITE.netlify.app/article-NOM-DU-FICHIER.html">
+<meta property="og:title" content="TITRE DE L'ARTICLE | Les petits bugs">
+<meta property="og:description" content="DESCRIPTION COURTE DE L'ARTICLE.">
+<meta property="og:url" content="https://lespetitsbugs.netlify.app/article-NOM.html">
 <meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="apple-mobile-web-app-title" content="Petits bugs">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#FAF6EF">
 <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"TITRE DE L'ARTICLE",
+  "description":"DESCRIPTION COURTE DE L'ARTICLE.",
+  "datePublished":"AAAA-MM-JJ",
+  "dateModified":"AAAA-MM-JJ",
+  "inLanguage":"fr-FR",
+  "author":{"@type":"Organization","name":"Les petits bugs"},
+  "publisher":{"@type":"Organization","name":"Les petits bugs"}
+}
+</script>
 </head>
 <body>
-
 <header class="site">
-  <div class="wrap">
-    <a href="index.html" class="logo">
-      <img src="logo-full.png" alt="Les petits bugs — le journal des parents curieux" class="logo-img">
-    </a>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" onclick="document.querySelector('nav.main').classList.toggle('open'); this.setAttribute('aria-expanded', document.querySelector('nav.main').classList.contains('open'))">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 5h14M2 9h14M2 13h14" stroke="#2B2924" stroke-width="1.6" stroke-linecap="round"/></svg>
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo"><img src="logo-full.png" alt="Les petits bugs" class="logo-img"></a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" onclick="toggleNav(this)">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 5h14M2 9h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
     </button>
     <nav class="main">
       <a href="index.html">Accueil</a>
-      <a href="index.html#articles">Parentalité</a>
+      <a href="index.html#articles" class="active">Parentalité</a>
       <a href="a-propos.html">À propos</a>
-      <a href="index.html#articles" class="icon-btn" aria-label="Rechercher">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.6"/><path d="M13 13L17 17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-      </a>
     </nav>
   </div>
 </header>
 
 <main class="article">
   <div class="article-hero wrap">
-    <div class="photo-wrap">
-      <!-- Idéalement une vraie photo : <img src="ta-photo.jpg" alt="..." style="width:100%;height:100%;object-fit:cover;">
-           En attendant, choisis une teinte de catégorie : t-parentalite / t-sommeil / t-alimentation / t-voyages / t-discipline -->
-      <div class="photo t-parentalite" style="border-radius:inherit;"></div>
+    <div class="photo-wrap emotion-art">
+      <!-- Remplace cette illustration par une image si tu en as une :
+      <img src="ton-image.jpg" alt="DESCRIPTION" style="width:100%;height:100%;object-fit:cover;">
+      -->
+      <div class="emotion-scene" aria-hidden="true">
+        <span class="emotion-sun"></span><span class="emotion-parent"></span><span class="emotion-child"></span><span class="emotion-heart">♡</span>
+      </div>
     </div>
   </div>
 
   <div class="article-head wrap">
     <a href="index.html" class="back">← Retour au journal</a>
-    <span class="cat">Catégorie</span>
+    <span class="cat">CATÉGORIE</span>
     <h1>Titre de l'article</h1>
-    <p class="lede">Une ou deux phrases d'introduction qui donnent envie de lire la suite.</p>
-    <p class="meta-line">Date · X min de lecture</p>
+    <p class="lede">Une ou deux phrases qui donnent envie de lire la suite.</p>
+    <p class="meta-line">DATE · X min de lecture</p>
   </div>
 
   <div class="article-body">
-    <p>Premier paragraphe de l'article.</p>
+    <p>Premier paragraphe.</p>
 
     <h2>Un sous-titre</h2>
     <p>Contenu de cette section.</p>
 
-    <div class="callout">Un encadré pratique pour mettre en avant une information clé.</div>
+    <div class="callout">
+      <span class="callout-label">À essayer</span>
+      Information pratique à retenir.
+    </div>
 
-    <p>Conclusion de l'article.</p>
+    <p>Suite de l'article.</p>
   </div>
 
-  <div class="related">
+  <section class="related">
     <div class="wrap">
       <h2>À lire aussi</h2>
       <div class="mag-grid">
-        <a href="article-limites.html" class="card">
-          <div class="photo-wrap"><img src="illustration-limites.jpg" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
-          <span class="cat">Discipline positive</span>
-          <h3>Et si on disait moins « non » à nos enfants ?</h3>
-        </a>
-        <!-- Ajoute ici une carte par article publié, sur le même modèle -->
+        <!-- Ajoute ici 1 à 3 articles déjà publiés. -->
       </div>
     </div>
-  </div>
+  </section>
 </main>
 
 <footer class="site">
-  <div class="wrap">
-    <a href="index.html" class="logo footer-logo">
-      <img src="logo-mark.png" alt="" class="footer-mark">
-      <span class="text">Les petits bugs</span>
-    </a>
+  <div class="wrap footer-inner">
+    <a href="index.html" class="logo footer-logo"><img src="logo-mark.png" alt="" class="footer-mark"><span class="text">Les petits bugs</span></a>
+    <p>Un petit journal pour les grands moments du quotidien.</p>
   </div>
 </footer>
-
+<script>
+function toggleNav(button) {
+  const nav = document.querySelector('nav.main');
+  const open = nav.classList.toggle('open');
+  button.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+</script>
 </body>
 </html>
