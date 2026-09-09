@@ -6,7 +6,8 @@ Architecture inchangée : HTML/CSS statique, sans base de données ni build — 
 
 ## Ce qui a été fait
 
-- **Logo** : coccinelle dessinée à la main (`logo-mark.svg`), en pointillés avec la traînée en cœur, intégrée au nom. Fonctionne en petit format et en mono. `favicon.svg` est la version simplifiée pour l'onglet du navigateur.
+- **Logo** : ton propre visuel (celui que tu as envoyé) est maintenant utilisé partout — `logo-full.png` dans l'en-tête de chaque page, `logo-mark.png` (juste la coccinelle, détourée) dans le pied de page.
+- **Icône "Ajouter à l'écran d'accueil" (iOS)** : corrigée. `apple-touch-icon.png` est une version carrée de la coccinelle sur fond ivoire, déclarée dans le `<head>` de chaque page (`<link rel="apple-touch-icon">`) — quand tu ajoutes le site à l'écran d'accueil maintenant, tu obtiens la coccinelle et le nom "Petits bugs", plus la lettre "L" générique.
 - **Palette** : crème/ivoire en fond, vert sauge pour les accents éditoriaux, terracotta pour les CTA et catégories, touches de jaune beurre et bleu pâle réservées aux petits détails (voir `:root` dans `style.css`).
 - **Typographie** : Newsreader (serif) pour les titres, avec un usage italique ponctuel pour la touche espiègle ; Inter pour tout le texte de lecture.
 - **Homepage** : hero avec titre fort + CTA, grille magazine (1 article principal + 2 secondaires), bandeau distinct pour la rubrique Voyages.
@@ -54,9 +55,11 @@ site/
 ├── article-alimentation.html
 ├── article-template.html      → à dupliquer pour chaque nouvel article
 ├── style.css                   → palette, typographie, layout magazine
-├── logo-mark.svg                → logo complet (coccinelle + traînée)
-├── favicon.svg                    → version simplifiée pour l'onglet
-├── illustration-limites.svg        → illustration dédiée à l'article limites
+├── logo-full.png                 → logo complet, utilisé dans l'en-tête de chaque page
+├── logo-mark.png                   → coccinelle seule, utilisée dans le pied de page
+├── apple-touch-icon.png              → icône carrée pour "Ajouter à l'écran d'accueil" (iOS)
+├── icon-512.png, favicon-32.png        → icônes pour l'onglet du navigateur
+├── illustration-limites.svg              → illustration dédiée à l'article limites
 ├── robots.txt
 ├── sitemap.xml
 └── README.md

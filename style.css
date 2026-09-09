@@ -64,7 +64,14 @@ header.site .wrap {
   gap: 10px;
 }
 
-.logo .mark { width: 40px; height: 34px; flex-shrink: 0; }
+.logo-img {
+  height: 46px;
+  width: auto;
+  display: block;
+}
+
+.footer-logo { gap: 8px; }
+.footer-mark { width: 26px; height: auto; display: block; }
 
 .logo .text {
   font-family: "Newsreader", Georgia, serif;
@@ -131,7 +138,7 @@ nav.main a:focus-visible { color: var(--terracotta-deep); }
     z-index: 20;
   }
   nav.main.open { display: flex; }
-  .logo .tagline { display: none; }
+  .logo-img { height: 34px; }
 }
 
 /* ---------- Search ---------- */
