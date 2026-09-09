@@ -4,7 +4,21 @@ Refonte complète : identité éditoriale magazine, nouveau logo, nouvelle palet
 
 Architecture inchangée : HTML/CSS statique, sans base de données ni build — comme avant, tu déploies en uploadant les fichiers sur GitHub, Netlify republie automatiquement.
 
-## Ce qui a été fait
+## Derniers ajustements (v4)
+
+- Retiré les deux articles d'exemple (sommeil, alimentation) que je avais rédigés — il ne reste que ton article sur les limites, le seul que tu aies écrit
+- Retiré la section « À lire aussi » de cet article et du modèle (rien à recommander pour l'instant, plutôt que d'afficher des liens morts)
+- La page d'accueil affiche donc une seule carte, en position "featured"
+
+## Derniers ajustements (v3)
+
+- Logo agrandi d'environ 32 % sur mobile, en-tête plus compact
+- « Voyages » retiré du menu et de la homepage (page `voyages.html` supprimée) tant qu'il n'y a pas d'article dans cette catégorie — la structure (`.travel-banner`, teinte `t-voyages` dans `style.css`) reste prête pour la réintroduire plus tard
+- Section renommée « Nos articles » (au lieu de « Nos derniers articles »)
+- Illustration du hero réduite sur mobile (200px de haut max, contre ~240px avant) pour laisser le contenu du journal apparaître plus vite
+- CTA principal renommé « Lire les articles »
+
+## Ce qui a été fait (v2)
 
 - **Logo** : ton propre visuel (celui que tu as envoyé) est maintenant utilisé partout — `logo-full.png` dans l'en-tête de chaque page, `logo-mark.png` (juste la coccinelle, détourée) dans le pied de page.
 - **Icône "Ajouter à l'écran d'accueil" (iOS)** : corrigée. `apple-touch-icon.png` est une version carrée de la coccinelle sur fond ivoire, déclarée dans le `<head>` de chaque page (`<link rel="apple-touch-icon">`) — quand tu ajoutes le site à l'écran d'accueil maintenant, tu obtiens la coccinelle et le nom "Petits bugs", plus la lettre "L" générique.
