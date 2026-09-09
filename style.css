@@ -65,7 +65,7 @@ header.site .wrap {
 }
 
 .logo-img {
-  height: 52px;
+  height: 64px;
   width: auto;
   display: block;
 }
@@ -138,7 +138,7 @@ nav.main a:focus-visible { color: var(--terracotta-deep); }
     z-index: 20;
   }
   nav.main.open { display: flex; }
-  .logo-img { height: 45px; }
+  .logo-img { height: 58px; }
 }
 
 /* ---------- Search ---------- */
@@ -333,14 +333,14 @@ nav.main a:focus-visible { color: var(--terracotta-deep); }
 /* ---------- Article page ---------- */
 main.article { padding: 0 0 60px; }
 
-.article-hero { padding: 28px 0 0; }
+.article-hero { padding-top: 28px; }
 .article-hero .photo-wrap {
   border-radius: var(--radius);
   overflow: hidden;
   aspect-ratio: 16/9;
 }
 
-.article-head { padding: 28px 0 0; }
+.article-head { padding-top: 28px; }
 .article-head .back {
   font-size: 14.5px;
   color: var(--ink-soft);
