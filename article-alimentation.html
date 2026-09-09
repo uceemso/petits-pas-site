@@ -12,57 +12,108 @@
 <meta property="og:description" content="Un guide sans pression pour aborder les premiers repas solides.">
 <meta property="og:url" content="https://VOTRE-SITE.netlify.app/article-alimentation.html">
 <meta property="og:locale" content="fr_FR">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site">
   <div class="wrap">
-    <a href="index.html" class="logo">Les petits <span>bugs</span></a>
-    <nav class="site">
+    <a href="index.html" class="logo">
+      <span class="mark"><svg viewBox="0 0 120 100" role="img" aria-hidden="true"><path d="M6,70 C18,66 26,58 30,48" fill="none" stroke="#4B5F45" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7"/><path d="M30,48 C40,30 58,26 66,38 C72,47 66,58 56,58 C48,58 46,49 52,45" fill="none" stroke="#4B5F45" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7"/><g transform="translate(62,34) rotate(-12)"><path d="M-4,-16 C-14,-22 -18,-14 -14,-8" fill="none" stroke="#4B5F45" stroke-width="2" stroke-linecap="round"/><path d="M4,-16 C14,-22 18,-14 14,-8" fill="none" stroke="#4B5F45" stroke-width="2" stroke-linecap="round"/><path d="M0,-14 C-17,-14 -26,0 -20,16 C-14,30 14,30 20,16 C26,0 17,-14 0,-14 Z" fill="#DD8563"/><path d="M0,-14 L0,26" stroke="#2B2924" stroke-width="2"/><ellipse cx="0" cy="-18" rx="9" ry="8" fill="#2B2924"/><circle cx="-9" cy="-2" r="3" fill="#2B2924"/><circle cx="9" cy="-2" r="3" fill="#2B2924"/><circle cx="-11" cy="10" r="2.6" fill="#2B2924"/><circle cx="11" cy="10" r="2.6" fill="#2B2924"/><circle cx="0" cy="16" r="2.6" fill="#2B2924"/></g></svg></span>
+      <span class="text">Les petits bugs<span class="tagline">Le journal des parents curieux</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" onclick="document.querySelector('nav.main').classList.toggle('open'); this.setAttribute('aria-expanded', document.querySelector('nav.main').classList.contains('open'))">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 5h14M2 9h14M2 13h14" stroke="#2B2924" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="main">
       <a href="index.html">Accueil</a>
-      <a href="index.html#articles">Articles</a>
+      <a href="index.html#articles">Parentalité</a>
+      <a href="voyages.html">Voyages</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="index.html#articles" class="icon-btn" aria-label="Rechercher">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.6"/><path d="M13 13L17 17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </a>
     </nav>
   </div>
 </header>
 
 <main class="article">
-  <div class="wrap">
-    <a href="index.html" class="back">← Retour aux articles</a>
-    <p class="meta">Alimentation · 6 min de lecture</p>
+  <div class="article-hero wrap">
+    <div class="photo-wrap">
+      <!-- Remplace ce bloc par une vraie photo : <img src="ta-photo.jpg" alt="..." style="width:100%;height:100%;object-fit:cover;"> -->
+      <div class="photo t-alimentation" style="border-radius:inherit;">
+        <svg viewBox="0 0 100 100" style="width:80px;"><ellipse cx="50" cy="62" rx="26" ry="9" fill="none" stroke="#2B2924" stroke-width="3"/><path d="M50,10 L50,45 M42,18 L42,42 M58,18 L58,42" stroke="#2B2924" stroke-width="3" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-head wrap">
+    <a href="index.html" class="back">← Retour au journal</a>
+    <span class="cat">Alimentation</span>
     <h1>Diversification alimentaire : par où commencer</h1>
     <p class="lede">Autour de 6 mois, une nouvelle étape commence. Voici ce qui compte vraiment pour bien démarrer, et ce qu'on peut laisser de côté.</p>
+    <p class="meta-line">10 janvier 2026 · 6 min de lecture</p>
+  </div>
 
-    <div class="body">
-      <p>La diversification alimentaire soulève souvent plus de questions que de certitudes. Voici les repères essentiels, sans surcharge d'informations.</p>
+  <div class="article-body">
+    <p>La diversification alimentaire soulève souvent plus de questions que de certitudes. Voici les repères essentiels, sans surcharge d'informations.</p>
 
-      <h2>Le bon moment</h2>
-      <p>Les recommandations actuelles situent le début de la diversification autour de 6 mois, lorsque l'enfant tient assis avec un peu de soutien et montre de l'intérêt pour ce qui se passe dans l'assiette des adultes.</p>
+    <h2>Le bon moment</h2>
+    <p>Les recommandations actuelles situent le début de la diversification autour de 6 mois, lorsque l'enfant tient assis avec un peu de soutien et montre de l'intérêt pour ce qui se passe dans l'assiette des adultes.</p>
 
-      <h2>Par quoi commencer</h2>
-      <ul>
-        <li>Des légumes ou fruits mixés très finement, un seul aliment à la fois</li>
-        <li>De petites quantités : une à deux cuillères suffisent au début</li>
-        <li>Un nouvel aliment introduit tous les trois à quatre jours, pour repérer d'éventuelles réactions</li>
-      </ul>
+    <h2>Par quoi commencer</h2>
+    <ul>
+      <li>Des légumes ou fruits mixés très finement, un seul aliment à la fois</li>
+      <li>De petites quantités : une à deux cuillères suffisent au début</li>
+      <li>Un nouvel aliment introduit tous les trois à quatre jours, pour repérer d'éventuelles réactions</li>
+    </ul>
 
-      <div class="callout">
-        Le lait (maternel ou infantile) reste l'aliment principal jusqu'à environ 1 an. Les repas solides du début sont une découverte, pas encore une source majeure de nutrition.
+    <div class="callout">Le lait (maternel ou infantile) reste l'aliment principal jusqu'à environ 1 an. Les repas solides du début sont une découverte, pas encore une source majeure de nutrition.</div>
+
+    <h2>Ce qui n'a pas besoin d'être parfait</h2>
+    <p>L'ordre des aliments introduits, la texture exacte, le fait que bébé mange peu au début : rien de tout cela n'a besoin d'être optimisé. Le plus important est d'observer l'enfant et de respecter son rythme, en évitant de forcer.</p>
+
+    <p>En cas de doute, notamment sur les allergènes ou les antécédents familiaux, un échange avec le pédiatre permet d'avancer avec plus de confiance.</p>
+  </div>
+
+  <div class="related">
+    <div class="wrap">
+      <h2>À lire aussi</h2>
+      <div class="mag-grid">
+        <a href="article-limites.html" class="card">
+          <div class="photo-wrap"><img src="illustration-limites.svg" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+          <span class="cat">Discipline positive</span>
+          <h3>Et si on disait moins « non » à nos enfants ?</h3>
+        </a>
+        <a href="article-sommeil.html" class="card">
+          <div class="photo-wrap">
+            <div class="photo t-sommeil"><svg viewBox="0 0 100 100"><path d="M62,30 A22,22 0 1 0 66,72 A28,28 0 1 1 62,30 Z" fill="#4B5F45"/></svg></div>
+          </div>
+          <span class="cat">Sommeil</span>
+          <h3>Aider bébé à mieux dormir sans tout révolutionner</h3>
+        </a>
+        <a href="voyages.html" class="card">
+          <div class="photo-wrap">
+            <div class="photo t-voyages"><svg viewBox="0 0 100 100"><path d="M15,55 L85,55 L75,65 L25,65 Z" fill="#4B5F45"/><path d="M50,20 L58,55 L42,55 Z" fill="#4B5F45"/></svg></div>
+          </div>
+          <span class="cat">Voyages</span>
+          <h3>Partir loin avec un petit bug ? C'est possible.</h3>
+        </a>
       </div>
-
-      <h2>Ce qui n'a pas besoin d'être parfait</h2>
-      <p>L'ordre des aliments introduits, la texture exacte, le fait que bébé mange peu au début : rien de tout cela n'a besoin d'être optimisé. Le plus important est d'observer l'enfant et de respecter son rythme, en évitant de forcer.</p>
-
-      <p>En cas de doute, notamment sur les allergènes ou les antécédents familiaux, un échange avec le pédiatre permet d'avancer avec plus de confiance.</p>
     </div>
   </div>
 </main>
 
 <footer class="site">
   <div class="wrap">
-    Les petits bugs — conseils écrits avec attention pour les parents d'aujourd'hui.
+    <a href="index.html" class="logo">
+      <span class="mark" style="width:30px;height:26px;"><svg viewBox="0 0 120 100"><g transform="translate(62,34) rotate(-12)"><path d="M0,-14 C-17,-14 -26,0 -20,16 C-14,30 14,30 20,16 C26,0 17,-14 0,-14 Z" fill="#DD8563"/><path d="M0,-14 L0,26" stroke="#2B2924" stroke-width="2"/><ellipse cx="0" cy="-18" rx="9" ry="8" fill="#2B2924"/></g></svg></span>
+      <span class="text">Les petits bugs</span>
+    </a>
+    <p>Le journal des parents curieux — écrit avec attention, sans jamais faire la morale.</p>
   </div>
 </footer>
 

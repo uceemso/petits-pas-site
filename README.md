@@ -1,34 +1,63 @@
-# Les petits bugs — conseils pour jeunes parents
+# Les petits bugs — le journal des parents curieux
 
-Site 100% statique (HTML/CSS), sans base de données ni build. Chaque article est un fichier `.html` indépendant.
+Refonte complète : identité éditoriale magazine, nouveau logo, nouvelle palette, mise en page magazine avec article principal + secondaires, rubrique Voyages, template d'article avec image d'ouverture et articles liés.
 
-## Après le déploiement : remplacer l'URL provisoire
+Architecture inchangée : HTML/CSS statique, sans base de données ni build — comme avant, tu déploies en uploadant les fichiers sur GitHub, Netlify republie automatiquement.
 
-Tous les fichiers contiennent `https://VOTRE-SITE.netlify.app` dans les balises `canonical`, `og:url` et dans `robots.txt` / `sitemap.xml`. Une fois que tu connais l'adresse définitive de ton site (Netlify → Deploy settings → Change site name), remplace cette valeur partout où elle apparaît. Sans ça, Google reçoit une mauvaise adresse canonique.
+## Ce qui a été fait
+
+- **Logo** : coccinelle dessinée à la main (`logo-mark.svg`), en pointillés avec la traînée en cœur, intégrée au nom. Fonctionne en petit format et en mono. `favicon.svg` est la version simplifiée pour l'onglet du navigateur.
+- **Palette** : crème/ivoire en fond, vert sauge pour les accents éditoriaux, terracotta pour les CTA et catégories, touches de jaune beurre et bleu pâle réservées aux petits détails (voir `:root` dans `style.css`).
+- **Typographie** : Newsreader (serif) pour les titres, avec un usage italique ponctuel pour la touche espiègle ; Inter pour tout le texte de lecture.
+- **Homepage** : hero avec titre fort + CTA, grille magazine (1 article principal + 2 secondaires), bandeau distinct pour la rubrique Voyages.
+- **Page article** : grande image d'ouverture, catégorie, titre, intro, corps très lisible, encadrés pratiques, articles associés en fin de page.
+- **Nouvelles pages** : `voyages.html` (hub de la rubrique) et `a-propos.html`.
+- **Recherche** : barre de recherche simple côté client sur la page d'accueil (aucun backend nécessaire, ne gêne pas l'indexation Google).
+- **Mobile** : menu en accordéon, grille qui repasse en une colonne, aucun élément ne déborde (vérifié sur les tailles courantes 360–430px de large).
+
+## Important : les photos sont des emplacements, pas des photos
+
+Je n'ai pas de générateur de photos réalistes et je ne peux pas légalement récupérer des photos trouvées sur le web pour les mettre sur ton site (question de droits). Toutes les zones "photo" (hero, cartes d'articles, image d'ouverture des articles) sont donc des blocs de couleur douce avec une petite icône, clairement identifiés comme emplacements.
+
+**Pour remplacer un emplacement par une vraie photo**, cherche ce commentaire dans le HTML :
+```html
+<!-- Remplace ce bloc par une vraie photo : <img src="ta-photo.jpg" ...> -->
+<div class="photo t-sommeil">...</div>
+```
+Remplace le `<div class="photo ...">...</div>` entier par :
+```html
+<img src="photos/ta-photo.jpg" alt="Description de la photo" style="width:100%;height:100%;object-fit:cover;">
+```
+Crée un dossier `photos/` à la racine du repo pour y déposer tes images (formats `.jpg` ou `.webp`, compressées si possible pour la vitesse de chargement).
 
 ## Ajouter un nouvel article
 
-1. Duplique `article-template.html`, renomme-le (ex: `article-proprete.html`)
-2. Remplace le titre, la description, la catégorie, le texte du corps
-3. Ouvre `index.html` et ajoute un bloc `<a class="entry">` en copiant un des articles existants (change le lien, l'icône, le titre, l'extrait)
-4. Ajoute une ligne dans `sitemap.xml` avec l'URL du nouvel article
-5. Redéploie (upload sur GitHub → Netlify republie automatiquement)
+1. Duplique `article-template.html`, renomme-le (ex: `article-activites.html`)
+2. Remplace titre, description, catégorie, texte, teinte de la photo (`t-parentalite`, `t-sommeil`, `t-alimentation`, `t-voyages`, `t-discipline`)
+3. Ajoute une carte dans `index.html` (section `#card-grid`) en copiant un bloc `<a class="card">` existant
+4. Ajoute l'URL dans `sitemap.xml`
+5. Upload sur GitHub → Netlify republie automatiquement
 
-## Structure du site
+## Après le déploiement
+
+Remplace `https://VOTRE-SITE.netlify.app` par ta vraie adresse dans tous les fichiers (`canonical`, `og:url`, `robots.txt`, `sitemap.xml`) — sinon Google reçoit une mauvaise adresse.
+
+## Structure
 
 ```
 site/
-├── index.html                 → page d'accueil, liste des articles
-├── article-limites.html       → poser une limite sans dire non
-├── article-sommeil.html       → aider bébé à dormir
-├── article-alimentation.html  → diversification alimentaire
+├── index.html                 → accueil magazine
+├── voyages.html               → hub de la rubrique Voyages
+├── a-propos.html              → page à propos
+├── article-limites.html       → discipline positive (avec illustration dédiée)
+├── article-sommeil.html
+├── article-alimentation.html
 ├── article-template.html      → à dupliquer pour chaque nouvel article
-├── style.css                   → tous les styles
-├── robots.txt                   → autorise Google à indexer, pointe vers le sitemap
-├── sitemap.xml                   → liste des pages, à mettre à jour à chaque article
+├── style.css                   → palette, typographie, layout magazine
+├── logo-mark.svg                → logo complet (coccinelle + traînée)
+├── favicon.svg                    → version simplifiée pour l'onglet
+├── illustration-limites.svg        → illustration dédiée à l'article limites
+├── robots.txt
+├── sitemap.xml
 └── README.md
 ```
-
-## Vérifier l'indexation
-
-Une fois le site en ligne à sa vraie adresse, inscris-le sur [Google Search Console](https://search.google.com/search-console) et soumets `sitemap.xml` — ça accélère la découverte du site par Google.
