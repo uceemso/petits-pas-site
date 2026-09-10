@@ -4,6 +4,13 @@ Refonte complète : identité éditoriale magazine, nouveau logo, nouvelle palet
 
 Architecture inchangée : HTML/CSS statique, sans base de données ni build — comme avant, tu déploies en uploadant les fichiers sur GitHub, Netlify republie automatiquement.
 
+## Derniers ajustements (v5)
+
+- Le journal contient uniquement les deux articles écrits par Marion : émotions et limites
+- Les articles d’exemple sur le sommeil et l’alimentation ont été supprimés
+- Les titres des deux cartes ont désormais la même taille
+- Les deux articles sont datés de septembre 2026
+
 ## Derniers ajustements (v4)
 
 - Retiré les deux articles d'exemple (sommeil, alimentation) que je avais rédigés — il ne reste que ton article sur les limites, le seul que tu aies écrit
@@ -65,8 +72,7 @@ site/
 ├── voyages.html               → hub de la rubrique Voyages
 ├── a-propos.html              → page à propos
 ├── article-limites.html       → discipline positive (avec illustration dédiée)
-├── article-sommeil.html
-├── article-alimentation.html
+├── article-emotions.html      → accueil des émotions
 ├── article-template.html      → à dupliquer pour chaque nouvel article
 ├── style.css                   → palette, typographie, layout magazine
 ├── logo-full.png                 → logo complet, utilisé dans l'en-tête de chaque page
