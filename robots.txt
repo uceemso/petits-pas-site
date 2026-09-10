@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://VOTRE-SITE.netlify.app/sitemap.xml
+Sitemap: https://uceemso.github.io/petits-pas-site/sitemap.xml
