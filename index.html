@@ -68,7 +68,7 @@
         <p class="section-kicker">À lire maintenant</p>
         <h2>Nos articles</h2>
       </div>
-      <span class="article-count" id="article-count">2 articles</span>
+      <span class="article-count" id="article-count">4 articles</span>
     </div>
 
     <div class="mag-grid" id="card-grid">
@@ -99,6 +99,26 @@
         <h3>Et si on disait moins « non » à nos enfants ?</h3>
         <p class="excerpt">Trois façons de poser une limite sans entrer dans le bras de fer.</p>
         <span class="date">15 janvier 2026 · 6 min</span>
+      </a>
+
+      <a href="article-sommeil.html" class="card" data-search="sommeil bébé dormir nuits routine coucher réveils régressions">
+        <div class="photo-wrap" style="background:#e4eadf;display:flex;align-items:center;justify-content:center;" aria-hidden="true">
+          <svg viewBox="0 0 100 100" style="width:82px;height:82px;"><path d="M62,30 A22,22 0 1 0 66,72 A28,28 0 1 1 62,30 Z" fill="#4B5F45"/></svg>
+        </div>
+        <span class="cat">Sommeil</span>
+        <h3>Aider bébé à mieux dormir sans tout révolutionner</h3>
+        <p class="excerpt">Trois ajustements progressifs pour retrouver des nuits plus calmes, sans méthode stricte.</p>
+        <span class="date">15 janvier 2026 · 5 min</span>
+      </a>
+
+      <a href="article-alimentation.html" class="card" data-search="alimentation diversification alimentaire bébé repas solides fruits légumes premiers repas">
+        <div class="photo-wrap" style="background:#f3ecdf;display:flex;align-items:center;justify-content:center;" aria-hidden="true">
+          <svg viewBox="0 0 100 100" style="width:82px;height:82px;"><ellipse cx="50" cy="62" rx="26" ry="9" fill="none" stroke="#2B2924" stroke-width="3"/><path d="M50,10 L50,45 M42,18 L42,42 M58,18 L58,42" stroke="#2B2924" stroke-width="3" stroke-linecap="round"/></svg>
+        </div>
+        <span class="cat">Alimentation</span>
+        <h3>Diversification alimentaire : par où commencer</h3>
+        <p class="excerpt">Les repères essentiels pour aborder les premiers repas solides sans pression.</p>
+        <span class="date">10 janvier 2026 · 6 min</span>
       </a>
     </div>
   </div>
@@ -150,7 +170,7 @@ function filterCards(query) {
     if (match) visible++;
   });
   document.getElementById('search-empty').hidden = visible !== 0 || q === '';
-  document.getElementById('article-count').textContent = q ? visible + (visible === 1 ? ' article' : ' articles') : '2 articles';
+  document.getElementById('article-count').textContent = q ? visible + (visible === 1 ? ' article' : ' articles') : '4 articles';
 }
 </script>
 </body>
