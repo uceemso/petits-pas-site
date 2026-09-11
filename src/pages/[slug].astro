@@ -16,7 +16,7 @@ const related = articles.filter((item) => item.id !== article.id && item.data.ca
 const jsonLd = {
   '@context': 'https://schema.org', '@type': 'BlogPosting', headline: data.title, description: data.seoDescription ?? data.description,
   image: new URL(`${base}${data.image.replace(/^\//, '')}`, Astro.site).href, datePublished: data.date.toISOString(), dateModified: data.updated.toISOString(),
-  author: { '@type': 'Organization', name: 'Les Petits Bugs', url: new URL(base, Astro.site).href }, publisher: { '@type': 'Organization', name: 'Les Petits Bugs', url: new URL(base, Astro.site).href },
+  author: { '@type': 'Person', name: 'Marie', url: new URL(`${base}a-propos.html`, Astro.site).href }, publisher: { '@type': 'Organization', name: 'Les Petits Bugs', url: new URL(base, Astro.site).href },
   mainEntityOfPage: { '@type': 'WebPage', '@id': canonical }, inLanguage: 'fr-FR'
 };
 ---
