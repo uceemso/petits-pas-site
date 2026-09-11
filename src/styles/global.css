@@ -20,13 +20,13 @@ header.site{padding:22px 0 0;border-bottom:1px solid var(--line);position:relati
 header.site .logo{align-items:center;justify-content:center}
 header.site .logo-img{height:84px}
 .footer-logo{gap:8px}.footer-mark{width:26px;height:auto}.logo .text{font-family:"Newsreader",Georgia,serif;font-weight:600;font-size:21px;color:var(--sage-deep);line-height:1.05}
-nav.main{display:flex;align-items:center;justify-content:center;width:100%;gap:34px;margin-top:17px;padding:14px 0 15px;border-top:1px solid var(--line)}nav.main a{font-size:14px;color:var(--ink-soft);transition:color .15s ease}nav.main a.active,nav.main a:hover{color:var(--terracotta-deep)}
+nav.main{display:flex;align-items:center;justify-content:center;width:100%;gap:34px;margin-top:17px;padding:14px 0 15px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}nav.main a{position:relative;font-size:14px;color:var(--ink-soft);transition:color .15s ease}nav.main a.active,nav.main a:hover{color:var(--terracotta-deep)}nav.main a.active::after{content:"";position:absolute;left:0;right:0;bottom:-15px;height:2px;background:var(--terracotta)}
 .icon-btn{width:20px;height:20px;color:var(--ink-soft);background:none;border:0;padding:0;cursor:pointer}
 .nav-toggle{display:none}
 .nav-text-button{appearance:none;border:0;background:none;color:var(--ink-soft);cursor:pointer;font:500 14px "Inter",sans-serif;padding:0;transition:color .15s ease}.nav-text-button:hover,.nav-text-button:focus-visible{color:var(--terracotta-deep)}
 .nav-search{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:0;border:0;background:transparent;color:var(--ink-soft);cursor:pointer}.nav-search:hover,.nav-search:focus-visible{color:var(--terracotta-deep)}
-.header-intro{width:100%;max-width:700px;margin:18px auto 0;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--ink-soft);font-size:15.5px;line-height:1.65;text-align:center}
-.header-tagline{display:none;width:100%;max-width:700px;margin:22px auto 0;padding:0 20px 22px;color:var(--ink-soft);font-size:15.5px;line-height:1.65;text-align:center}\n.home-page .header-tagline{display:block}\n.home-page nav.main{margin-top:0}.home-page .magazine{padding-top:44px}
+.header-intro{width:100%;max-width:700px;margin:18px auto 0;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--ink-soft);font-family:"Inter",system-ui,sans-serif;font-size:15.5px;font-weight:400;line-height:1.65;text-align:center}
+.home-page nav.main{margin-top:0;border-top:0}.home-page .magazine{padding-top:44px}
 
 #search-panel{display:none;border-bottom:1px solid var(--line);background:var(--cream-deep)}#search-panel.open{display:block}#search-panel .wrap{padding:16px 20px}
 #search-input{width:100%;padding:13px 17px;border-radius:999px;border:1px solid var(--line);background:var(--cream);font:15px "Inter",sans-serif;color:var(--ink)}
@@ -58,8 +58,9 @@ footer.site{display:none}
 @media(max-width:760px){
   header.site{padding-top:18px}.header-inner{display:flex}.logo-img{height:58px}header.site .logo-img{height:72px}
   .header-intro{margin-top:15px;padding:14px 0;font-size:14.5px;line-height:1.6;text-align:center}
-  nav.main{display:flex;position:static;flex-direction:row;align-items:center;justify-content:space-between;gap:8px;margin-top:13px;padding:13px 0 14px;border-top:1px solid var(--line);border-bottom:0;background:transparent}
-  .home-page .header-tagline{margin-top:18px;padding-bottom:18px;font-size:14.5px;line-height:1.55}\n  .home-page nav.main{margin-top:0}\n  nav.main a,.nav-text-button{font-size:12.5px;font-weight:600;letter-spacing:.015em;text-transform:uppercase}
+  nav.main{display:flex;position:static;flex-direction:row;align-items:center;justify-content:space-between;gap:8px;margin-top:13px;padding:13px 0 14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:transparent}
+  .home-page nav.main{margin-top:13px;border-top:1px solid var(--line)}
+  nav.main a,.nav-text-button{font-size:12.5px;font-weight:600;letter-spacing:.015em;text-transform:uppercase}
   .home-page .magazine{padding-top:34px}.hero{padding:42px 0 50px}.try-box{display:block}.try-box .text-link{display:inline-block;margin-top:16px}
 }
 @media(max-width:480px){.wrap{padding-left:18px;padding-right:18px}.hero-copy .lede{font-size:16.5px}.card.featured .photo-wrap{aspect-ratio:4/3}.article-body{font-size:16.5px}.quote{font-size:18px}}
