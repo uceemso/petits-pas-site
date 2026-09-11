@@ -68,22 +68,32 @@
         <p class="section-kicker">À lire maintenant</p>
         <h2>Nos articles</h2>
       </div>
-      <span class="article-count" id="article-count">2 articles</span>
+      <span class="article-count" id="article-count">3 articles</span>
     </div>
 
     <div class="mag-grid" id="card-grid">
-      <a href="article-emotions.html" class="card featured" data-search="émotions emotion colère tristesse frustration enfant parents connexion écouter comprendre">
+      <a href="article-ecrire-emotions.html" class="card featured" data-search="émotions emotion écrire écriture dessin liste parler mots communication enfant parents">
         <div class="inner">
           <div class="photo-wrap">
-            <img src="illustration-emotions.jpg" alt="Une mère assise auprès de son enfant triste." style="width:100%;height:100%;object-fit:cover;">
+            <img src="illustration-ecrire-emotions.jpg" alt="Une mère écoute son petit garçon pendant qu’elle écrit ses pensées sur une feuille." style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div>
             <span class="cat">Émotions</span>
-            <h3>Avant de corriger, commençons par écouter</h3>
-            <p class="excerpt">Quand un enfant est bouleversé, il n’a pas toujours besoin d’une solution. Il a souvent besoin que son émotion soit reconnue.</p>
-            <span class="date">10 septembre 2026 · 4 min</span>
+            <h3>Quand les mots ne viennent pas, écrivons-les</h3>
+            <p class="excerpt">L’écriture peut devenir un pont entre le trop-plein émotionnel et la compréhension.</p>
+            <span class="date">11 septembre 2026 · 4 min</span>
           </div>
         </div>
+      </a>
+
+      <a href="article-emotions.html" class="card" data-search="émotions emotion colère tristesse frustration enfant parents connexion écouter comprendre">
+        <div class="photo-wrap">
+          <img src="illustration-emotions.jpg" alt="Une mère assise auprès de son enfant triste." style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <span class="cat">Émotions</span>
+        <h3>Avant de corriger, commençons par écouter</h3>
+        <p class="excerpt">Quand un enfant est bouleversé, il a souvent besoin que son émotion soit reconnue.</p>
+        <span class="date">10 septembre 2026 · 4 min</span>
       </a>
 
       <a href="article-limites.html" class="card" data-search="discipline positive limites non gabriel bras de fer alternatives choix comportement">
@@ -104,10 +114,10 @@
     <div class="try-box">
       <div>
         <span class="try-label">Une idée à tester aujourd’hui</span>
-        <h2>Avant d’expliquer, essayez de nommer.</h2>
-        <p>« Tu es vraiment déçu. Tu avais très envie de faire ça. »</p>
+        <h2>Quand parler est difficile, essayez d’écrire.</h2>
+        <p>« Tu n’as pas besoin de m’expliquer maintenant. Je peux l’écrire pour toi. »</p>
       </div>
-      <a href="article-emotions.html" class="text-link">Lire l’article →</a>
+      <a href="article-ecrire-emotions.html" class="text-link">Lire l’article →</a>
     </div>
   </div>
 </section>
@@ -145,7 +155,7 @@ function filterCards(query) {
     if (match) visible++;
   });
   document.getElementById('search-empty').hidden = visible !== 0 || q === '';
-  document.getElementById('article-count').textContent = q ? visible + (visible === 1 ? ' article' : ' articles') : '2 articles';
+  document.getElementById('article-count').textContent = q ? visible + (visible === 1 ? ' article' : ' articles') : '3 articles';
 }
 </script>
 </body>
