@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { render } from 'astro:content';
+import ArticleCard from '../components/ArticleCard.astro';
+
+interface Props { article: CollectionEntry<'articles'>; related: CollectionEntry<'articles'>[]; }
+const { article, related } = Astro.props;
+const { data } = article;
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const canonical = new URL(`${base}${data.slug}.html`, Astro.site).href;
+const { Content } = await render(article);
+---
+<article class="article">
+  <div class="article-hero wrap">
+    <div class="photo-wrap"><img src={`${base}${data.image.replace(/^\//, '')}`} alt={data.imageAlt} width={data.imageWidth} height={data.imageHeight} fetchpriority="high" /></div>
+  </div>
+  <div class="article-head wrap">
+    <a href={base} class="back">← Retour au journal</a>
+    <span class="cat">{data.category}</span>
+    <h1>{data.title}</h1>
+    <p class="lede">{data.description}</p>
+    <p class="meta-line"><time datetime={data.date.toISOString().slice(0, 10)}>{data.date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</time> · {data.readingTime}</p>
+  </div>
+  <div class="article-body"><Content /></div>
+  {related.length > 0 && <section class="related">
+    <div class="wrap"><h2>À lire aussi</h2><div class="mag-grid">
+      {related.map((item) => <ArticleCard article={item} />)}
+    </div></div>
+  </section>}
+</article>

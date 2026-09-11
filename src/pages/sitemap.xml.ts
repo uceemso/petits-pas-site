@@ -1,0 +1,15 @@
+import type { APIRoute } from 'astro';
+import { getCollection } from 'astro:content';
+
+export const GET: APIRoute = async ({ site }) => {
+  const articles = await getCollection('articles', ({ data }) => !data.draft);
+  const projectBase = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+  const base = new URL(projectBase, site).href.replace(/\/$/, '');
+  const urls = [
+    `${base}/`,
+    `${base}/a-propos.html`,
+    ...articles.map((article) => `${base}/${article.data.slug}.html`)
+  ];
+  const body = urls.map((url) => `  <url><loc>${url}</loc></url>`).join('\n');
+  return new Response(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>`, { headers: { 'Content-Type': 'application/xml; charset=utf-8' } });
+};
