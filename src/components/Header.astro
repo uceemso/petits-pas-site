@@ -11,7 +11,9 @@ const isParenting = pathname.includes('article-');
     <a href={base} class="logo">
       <img src={`${base}logos/logo-full-clean.png`} alt="Les petits bugs" class="logo-img" width="760" height="238" />
     </a>
-    <h1 class="header-intro">Des idées simples pour débugger le quotidien avec nos enfants</h1>
+    {isHome
+      ? <h1 class="header-intro">Des idées simples pour débugger le quotidien avec nos enfants</h1>
+      : <p class="header-intro">Des idées simples pour débugger le quotidien avec nos enfants</p>}
     <nav class="main" aria-label="Navigation principale">
       <a href={base} class:list={{ active: isHome }}>Accueil</a>
       <a href={`${base}#articles`} class:list={{ active: isParenting }}>Parentalité</a>
