@@ -4,7 +4,7 @@ seoTitle: "Émotions fortes chez l’enfant : écouter avant de corriger"
 description: "Un enfant bouleversé n’a pas toujours besoin d’une solution. Pourquoi reconnaître son émotion peut être le premier pas avant de poser une limite ou chercher une solution."
 seoDescription: "Quand un enfant est bouleversé, faut-il corriger ou écouter ? Découvrez pourquoi reconnaître son émotion aide avant de poser une limite ou chercher une solution."
 date: 2026-09-10
-updated: 2026-09-10
+updated: 2026-09-12
 category: "Émotions"
 image: "/images/illustration-emotions.jpg"
 imageAlt: "Une mère assise auprès de son enfant triste, dans une illustration à l’aquarelle."
@@ -48,6 +48,8 @@ L’émotion est accueillie. La limite reste là.
 
 **L’un n’empêche pas l’autre.**
 
+Quand il faut poser cette limite, [proposer ce que l’enfant peut faire à la place](/article-limites.html) peut parfois éviter le bras de fer.
+
 ## Pourquoi commencer par l’émotion ?
 
 Lorsqu’un enfant est submergé par une grosse émotion, il n’est pas forcément disponible pour écouter une longue explication ou réfléchir à une solution.
@@ -81,6 +83,8 @@ La prochaine fois que votre enfant explose parce que son dessin s’est déchir�
 <div class="example-list"><p>« Tu es vraiment déçu. »</p><p>« C’est frustrant quand ce qu’on avait construit tombe par terre. »</p><p>« Tu aurais vraiment aimé que ça se passe autrement. »</p></div>
 
 Pas besoin de discours. Pas besoin de convaincre.
+
+Et si les mots ne viennent pas, on peut aussi [passer par l’écriture, le dessin ou une petite liste](/article-ecrire-emotions.html) et revenir à la conversation plus tard.
 
 Juste une petite pause pour lui dire :
 
