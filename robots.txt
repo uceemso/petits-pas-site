@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://uceemso.github.io/petits-pas-site/sitemap.xml
+Sitemap: https://uceemso.github.io/les-petits-bugs/sitemap.xml

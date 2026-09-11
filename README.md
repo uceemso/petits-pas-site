@@ -64,7 +64,7 @@ Crée un dossier `photos/` à la racine du repo pour y déposer tes images (form
 
 ## Après le déploiement
 
-Le site public est disponible à l’adresse `https://uceemso.github.io/petits-pas-site/`. Les URL canoniques, `robots.txt` et `sitemap.xml` utilisent cette adresse.
+Le site public est disponible à l’adresse `https://uceemso.github.io/les-petits-bugs/`. Les URL canoniques, `robots.txt` et `sitemap.xml` utilisent cette adresse.
 
 ## Structure
 
