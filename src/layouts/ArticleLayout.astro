@@ -19,7 +19,7 @@ const { Content } = await render(article);
     <span class="cat">{data.category}</span>
     <h1>{data.title}</h1>
     <p class="lede">{data.description}</p>
-    <p class="meta-line"><time datetime={data.date.toISOString().slice(0, 10)}>{data.date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</time> · {data.readingTime}</p>
+    <p class="meta-line">Par <a href={`${base}a-propos.html`} class="author-link">Marie</a> · <time datetime={data.date.toISOString().slice(0, 10)}>{data.date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</time> · {data.readingTime}</p>
   </div>
   <div class="article-body"><Content /></div>
   {related.length > 0 && <section class="related">
