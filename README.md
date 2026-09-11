@@ -1,8 +1,10 @@
-# Les petits bugs — le journal des parents curieux
+# Les petits bugs
 
 Refonte complète : identité éditoriale magazine, nouveau logo, nouvelle palette, mise en page magazine avec article principal + secondaires, rubrique Voyages, template d'article avec image d'ouverture et articles liés.
 
-Architecture inchangée : HTML/CSS statique, sans base de données ni build — comme avant, tu déploies en uploadant les fichiers sur GitHub, Netlify republie automatiquement.
+Architecture inchangée : HTML/CSS statique, sans base de données ni build. Chaque push sur la branche `main` déclenche le déploiement sur GitHub Pages via `.github/workflows/pages.yml`.
+
+Les builds Git reliés à Netlify sont désactivés par `netlify.toml` afin qu’un push GitHub ne consomme plus de crédits Netlify.
 
 ## Derniers ajustements (v5)
 
@@ -58,11 +60,11 @@ Crée un dossier `photos/` à la racine du repo pour y déposer tes images (form
 2. Remplace titre, description, catégorie, texte, teinte de la photo (`t-parentalite`, `t-sommeil`, `t-alimentation`, `t-voyages`, `t-discipline`)
 3. Ajoute une carte dans `index.html` (section `#card-grid`) en copiant un bloc `<a class="card">` existant
 4. Ajoute l'URL dans `sitemap.xml`
-5. Upload sur GitHub → Netlify republie automatiquement
+5. Commit et push sur la branche `main` → GitHub Pages republie automatiquement
 
 ## Après le déploiement
 
-Remplace `https://VOTRE-SITE.netlify.app` par ta vraie adresse dans tous les fichiers (`canonical`, `og:url`, `robots.txt`, `sitemap.xml`) — sinon Google reçoit une mauvaise adresse.
+Le site public est disponible à l’adresse `https://uceemso.github.io/petits-pas-site/`. Les URL canoniques, `robots.txt` et `sitemap.xml` utilisent cette adresse.
 
 ## Structure
 

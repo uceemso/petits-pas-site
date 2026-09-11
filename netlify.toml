@@ -1,0 +1,3 @@
+[build]
+  # GitHub Pages est désormais l’unique cible de publication.
+  ignore = "exit 0"
