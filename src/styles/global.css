@@ -26,8 +26,7 @@ nav.main{display:flex;align-items:center;justify-content:center;width:100%;gap:3
 .nav-text-button{appearance:none;border:0;background:none;color:var(--ink-soft);cursor:pointer;font:500 14px "Inter",sans-serif;padding:0;transition:color .15s ease}.nav-text-button:hover,.nav-text-button:focus-visible{color:var(--terracotta-deep)}
 .nav-search{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:0;border:0;background:transparent;color:var(--ink-soft);cursor:pointer}.nav-search:hover,.nav-search:focus-visible{color:var(--terracotta-deep)}
 .header-intro{width:100%;max-width:700px;margin:18px auto 0;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--ink-soft);font-size:15.5px;line-height:1.65;text-align:center}
-.home-page nav.main{margin-top:0;border-top:0}.home-page .magazine{padding-top:44px}
-.home-h1{max-width:700px;margin:34px auto 0;padding:0 20px;color:var(--ink-soft);font-family:"Inter",system-ui,sans-serif;font-size:15.5px;font-weight:400;line-height:1.65;text-align:center}
+.header-tagline{display:none;width:100%;max-width:700px;margin:22px auto 0;padding:0 20px 22px;color:var(--ink-soft);font-size:15.5px;line-height:1.65;text-align:center}\n.home-page .header-tagline{display:block}\n.home-page nav.main{margin-top:0}.home-page .magazine{padding-top:44px}
 
 #search-panel{display:none;border-bottom:1px solid var(--line);background:var(--cream-deep)}#search-panel.open{display:block}#search-panel .wrap{padding:16px 20px}
 #search-input{width:100%;padding:13px 17px;border-radius:999px;border:1px solid var(--line);background:var(--cream);font:15px "Inter",sans-serif;color:var(--ink)}
@@ -60,8 +59,7 @@ footer.site{display:none}
   header.site{padding-top:18px}.header-inner{display:flex}.logo-img{height:58px}header.site .logo-img{height:72px}
   .header-intro{margin-top:15px;padding:14px 0;font-size:14.5px;line-height:1.6;text-align:center}
   nav.main{display:flex;position:static;flex-direction:row;align-items:center;justify-content:space-between;gap:8px;margin-top:13px;padding:13px 0 14px;border-top:1px solid var(--line);border-bottom:0;background:transparent}
-  .home-page nav.main{margin-top:0;border-top:0}
-  nav.main a,.nav-text-button{font-size:12.5px;font-weight:600;letter-spacing:.015em;text-transform:uppercase}
+  .home-page .header-tagline{margin-top:18px;padding-bottom:18px;font-size:14.5px;line-height:1.55}\n  .home-page nav.main{margin-top:0}\n  nav.main a,.nav-text-button{font-size:12.5px;font-weight:600;letter-spacing:.015em;text-transform:uppercase}
   .home-page .magazine{padding-top:34px}.hero{padding:42px 0 50px}.try-box{display:block}.try-box .text-link{display:inline-block;margin-top:16px}
 }
 @media(max-width:480px){.wrap{padding-left:18px;padding-right:18px}.hero-copy .lede{font-size:16.5px}.card.featured .photo-wrap{aspect-ratio:4/3}.article-body{font-size:16.5px}.quote{font-size:18px}}
