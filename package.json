@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "node scripts/prepare-generated-assets.mjs",
     "dev": "astro dev",
+    "prebuild": "node scripts/prepare-generated-assets.mjs",
     "build": "astro build",
     "preview": "astro preview"
   },
