@@ -1,6 +1,8 @@
 ---
 title: "Quand les mots ne viennent pas, écrivons-les"
+seoTitle: "Aider un enfant à exprimer ses émotions en écrivant"
 description: "Quand un enfant n’est pas prêt à parler de ce qu’il ressent, écrire, dessiner ou faire une liste peut créer un chemin vers la compréhension."
+seoDescription: "Un enfant n’est pas prêt à parler de ce qu’il ressent ? Écrire, dessiner ou faire une liste peut l’aider à déposer son émotion et à en parler plus tard."
 date: 2026-09-11
 updated: 2026-09-11
 category: "Émotions"
