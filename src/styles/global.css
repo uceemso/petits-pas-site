@@ -14,7 +14,7 @@ img{max-width:100%;display:block}
 .wrap{max-width:var(--max-width);margin:0 auto;padding:0 20px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
-header.site{padding:22px 0 0;border-bottom:1px solid var(--line);position:relative;z-index:30}
+header.site{padding:18px 0 0;border-bottom:1px solid var(--line);position:relative;z-index:30}
 .header-inner{display:flex;flex-direction:column;align-items:center;gap:0}
 .logo{display:flex;align-items:center;gap:10px}.logo-img{height:64px;width:auto}
 header.site .logo{align-items:center;justify-content:center}
@@ -25,7 +25,7 @@ nav.main{display:flex;align-items:center;justify-content:center;width:100%;gap:3
 .nav-toggle{display:none}
 .nav-text-button{appearance:none;border:0;background:none;color:var(--ink-soft);cursor:pointer;font:500 14px "Inter",sans-serif;padding:0;transition:color .15s ease}.nav-text-button:hover,.nav-text-button:focus-visible{color:var(--terracotta-deep)}
 .nav-search{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:0;border:0;background:transparent;color:var(--ink-soft);cursor:pointer}.nav-search:hover,.nav-search:focus-visible{color:var(--terracotta-deep)}
-.header-intro{width:100%;max-width:700px;margin:18px auto 0;padding:17px 0;color:var(--ink-soft);font-family:"Inter",system-ui,sans-serif;font-size:15.5px;font-weight:400;line-height:1.65;text-align:center}
+.header-intro{width:100%;max-width:700px;margin:12px auto 0;padding:12px 0;color:var(--ink-soft);font-family:"Inter",system-ui,sans-serif;font-size:15.5px;font-weight:400;line-height:1.65;text-align:center}
 .home-page nav.main{margin-top:0;border-top:0}.home-page .magazine{padding-top:44px}
 
 #search-panel{display:none;border-bottom:1px solid var(--line);background:var(--cream-deep)}#search-panel.open{display:block}#search-panel .wrap{padding:16px 20px}
@@ -56,8 +56,8 @@ nav.main{display:flex;align-items:center;justify-content:center;width:100%;gap:3
 footer.site{display:none}
 
 @media(max-width:760px){
-  header.site{padding-top:18px}.header-inner{display:flex}.logo-img{height:58px}header.site .logo-img{height:72px}
-  .header-intro{margin-top:15px;padding:14px 0;font-size:14.5px;line-height:1.6;text-align:center}
+  header.site{padding-top:16px}.header-inner{display:flex}.logo-img{height:58px}header.site .logo-img{height:72px}
+  .header-intro{margin-top:10px;padding:10px 0;font-size:14.5px;line-height:1.6;text-align:center}
   nav.main{display:flex;position:static;flex-direction:row;align-items:center;justify-content:space-between;gap:8px;margin-top:13px;padding:13px 0 14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:transparent}
   .home-page nav.main{margin-top:13px;border-top:1px solid var(--line)}
   nav.main a,.nav-text-button{font-size:12.5px;font-weight:600;letter-spacing:.015em;text-transform:uppercase}
