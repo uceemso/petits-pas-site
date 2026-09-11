@@ -4,7 +4,7 @@ seoTitle: "Aider un enfant à exprimer ses émotions en écrivant"
 description: "Quand un enfant n’est pas prêt à parler de ce qu’il ressent, écrire, dessiner ou faire une liste peut créer un chemin vers la compréhension."
 seoDescription: "Un enfant n’est pas prêt à parler de ce qu’il ressent ? Écrire, dessiner ou faire une liste peut l’aider à déposer son émotion et à en parler plus tard."
 date: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-12
 category: "Émotions"
 image: "/images/illustration-ecrire-emotions-topdown.jpg"
 imageAlt: "Un enfant et un adulte transforment un gribouillis en dessin sur une feuille."
@@ -48,7 +48,11 @@ L’important n’est pas la forme. C’est le message que nous lui envoyons :
 
 <p class="closing-line">« Ce que tu ressens a une place ici. »</p>
 
+Cette façon de faire part de la même idée que [reconnaître l’émotion avant de chercher à la corriger](/article-emotions.html) : l’enfant n’a pas besoin que son ressenti disparaisse pour que nous puissions l’accompagner.
+
 Une liste de souhaits accueille une envie sans promettre de l’exaucer. Un dessin accueille une colère sans autoriser les coups. Quelques mots sur une feuille reconnaissent une déception sans avoir besoin de la faire disparaître.
+
+Quand il s’agit surtout de poser une limite, [proposer une alternative concrète plutôt qu’un simple « non »](/article-limites.html) peut aussi aider l’enfant à savoir quoi faire à la place.
 
 ## Créer de l’espace pour parler plus tard
 
