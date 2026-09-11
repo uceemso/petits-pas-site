@@ -4,7 +4,7 @@ seoTitle: "Poser des limites sans dire non : 3 alternatives avec les enfants"
 description: "Trois façons de poser une limite sans entrer dans le bras de fer : proposer une alternative, offrir deux choix et préserver l’intention de l’enfant."
 seoDescription: "Comment poser une limite sans entrer dans le bras de fer ? Trois alternatives concrètes au « non » pour accompagner les enfants au quotidien."
 date: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-12
 category: "Discipline positive"
 image: "/images/illustration-limites.jpg"
 imageAlt: "Un grand frère joue avec un chien en peluche devant sa petite sœur dans un jardin."
@@ -53,6 +53,8 @@ Plutôt que de simplement bloquer son idée, j’ai essayé de préserver l’in
 ## Le but n’est pas de ne plus jamais dire « non »
 
 Bien sûr, il y aura toujours des moments où un « non » sera nécessaire. Certains comportements sont dangereux et ne sont pas négociables. Mais toutes les limites n’ont pas besoin de commencer par « non ».
+
+Et quand la limite déclenche de la frustration, on peut aussi [accueillir l’émotion avant de revenir à la règle](/article-emotions.html).
 
 Quand c’est possible, on peut essayer de transformer « Ne fais pas ça » en « Voilà ce que tu peux faire à la place. »
 
