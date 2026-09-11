@@ -1,6 +1,8 @@
 ---
 title: "Avant de corriger, commençons par écouter"
+seoTitle: "Émotions fortes chez l’enfant : écouter avant de corriger"
 description: "Un enfant bouleversé n’a pas toujours besoin d’une solution. Pourquoi reconnaître son émotion peut être le premier pas avant de poser une limite ou chercher une solution."
+seoDescription: "Quand un enfant est bouleversé, faut-il corriger ou écouter ? Découvrez pourquoi reconnaître son émotion aide avant de poser une limite ou chercher une solution."
 date: 2026-09-10
 updated: 2026-09-10
 category: "Émotions"
