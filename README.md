@@ -28,7 +28,7 @@ Le fichier Markdown suffit : la carte d’accueil, la page article, les métadon
 
 Les layouts génèrent les titres, descriptions, URL canoniques, Open Graph, Twitter Cards et données structurées Schema.org. Les articles utilisent `BlogPosting`. La rubrique Voyages reste accessible mais est `noindex` tant qu’elle ne contient pas de véritable article.
 
-Le site public est disponible à l’adresse `https://uceemso.github.io/les-petits-bugs/`. Les URL canoniques, `robots.txt` et `sitemap.xml` utilisent cette adresse.
+Le site public est disponible à l’adresse `https://lespetitsbugs.com`. Les URL canoniques, `robots.txt` et `sitemap.xml` utilisent cette adresse.
 
 ## Organisation
 
