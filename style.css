@@ -16,13 +16,14 @@ img{max-width:100%;display:block}
 header.site{padding:22px 0 0;border-bottom:1px solid var(--line);position:relative;z-index:30}
 .header-inner{display:flex;flex-direction:column;align-items:center;gap:0}
 .logo{display:flex;align-items:center;gap:10px}.logo-img{height:64px;width:auto}
-header.site .logo{height:72px;overflow:hidden;align-items:flex-start;justify-content:center}
+header.site .logo{align-items:center;justify-content:center}
 header.site .logo-img{height:84px}
 .footer-logo{gap:8px}.footer-mark{width:26px;height:auto}.logo .text{font-family:"Newsreader",Georgia,serif;font-weight:600;font-size:21px;color:var(--sage-deep);line-height:1.05}
 nav.main{display:flex;align-items:center;justify-content:center;width:100%;gap:34px;margin-top:17px;padding:14px 0 15px;border-top:1px solid var(--line)}nav.main a{font-size:14px;color:var(--ink-soft);transition:color .15s ease}nav.main a.active,nav.main a:hover{color:var(--terracotta-deep)}
 .icon-btn{width:20px;height:20px;color:var(--ink-soft);background:none;border:0;padding:0;cursor:pointer}
 .nav-toggle{display:none}
 .nav-text-button{appearance:none;border:0;background:none;color:var(--ink-soft);cursor:pointer;font:500 14px "Inter",sans-serif;padding:0;transition:color .15s ease}.nav-text-button:hover,.nav-text-button:focus-visible{color:var(--terracotta-deep)}
+.nav-search{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:0;border:0;background:transparent;color:var(--ink-soft);cursor:pointer}.nav-search:hover,.nav-search:focus-visible{color:var(--terracotta-deep)}
 .header-intro{width:100%;max-width:700px;margin:18px auto 0;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--ink-soft);font-size:15.5px;line-height:1.65;text-align:center}
 .home-page nav.main{margin-top:0;border-top:0}.home-page .magazine{padding-top:44px}
 
@@ -51,10 +52,10 @@ nav.main{display:flex;align-items:center;justify-content:center;width:100%;gap:3
 
 .related{padding:56px 0 0;border-top:1px solid var(--line);margin-top:56px}.related h2{font-size:23px;margin-bottom:24px}.related .mag-grid{grid-template-columns:1fr;gap:26px}@media(min-width:700px){.related .mag-grid{grid-template-columns:repeat(3,1fr)}}
 
-footer.site{border-top:1px solid var(--line);padding:34px 0}.footer-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px}.footer-logo .text{font-size:17px}.footer-inner p{color:var(--ink-soft);font-size:13.5px;margin:0}
+footer.site{display:none}
 
 @media(max-width:760px){
-  header.site{padding-top:18px}.header-inner{display:flex}.logo-img{height:58px}header.site .logo{height:61px}header.site .logo-img{height:72px}
+  header.site{padding-top:18px}.header-inner{display:flex}.logo-img{height:58px}header.site .logo-img{height:72px}
   .header-intro{margin-top:15px;padding:14px 0;font-size:14.5px;line-height:1.6;text-align:center}
   nav.main{display:flex;position:static;flex-direction:row;align-items:center;justify-content:space-between;gap:8px;margin-top:13px;padding:13px 0 14px;border-top:1px solid var(--line);border-bottom:0;background:transparent}
   .home-page nav.main{margin-top:0;border-top:0}
