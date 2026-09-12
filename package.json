@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predev": "node scripts/prepare-generated-assets.mjs",
+    "predev": "node scripts/check-article-formatting.mjs && node scripts/prepare-generated-assets.mjs",
     "dev": "astro dev",
-    "prebuild": "node scripts/prepare-generated-assets.mjs",
+    "prebuild": "node scripts/check-article-formatting.mjs && node scripts/prepare-generated-assets.mjs",
     "build": "astro build",
     "preview": "astro preview"
   },
