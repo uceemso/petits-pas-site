@@ -18,7 +18,7 @@ Il faut partir. Les chaussures sont mises, le sac est prêt… et mon enfant, lu
 
 Mon premier réflexe est rarement très sophistiqué :
 
-> « Allez, monte dans la voiture. On doit partir ! »
+<div class="callout">« Allez, monte dans la voiture. On doit partir ! »</div>
 
 Et parfois, plus je répète, moins il bouge.
 
@@ -26,11 +26,11 @@ Et parfois, plus je répète, moins il bouge.
 
 Au lieu de discuter du fait qu’on doit partir, je lui laisse choisir un détail :
 
-> « Tu veux prendre ton dinosaure ou ta petite voiture ? »
+<div class="callout">« Tu veux prendre ton dinosaure ou ta petite voiture ? »</div>
 
 Ou :
 
-> « On y va en pas de géant ou en sautant ? »
+<div class="callout">« On y va en pas de géant ou en sautant ? »</div>
 
 Je ne lui demande pas **si** on va à la voiture.
 
@@ -63,7 +63,7 @@ Pas quinze possibilités. Juste deux options que je suis réellement prête à a
 
 Et j’évite :
 
-> « Tu veux monter dans la voiture ? »
+<div class="callout">« Tu veux monter dans la voiture ? »</div>
 
 si « non » n’est pas une vraie option.
 
