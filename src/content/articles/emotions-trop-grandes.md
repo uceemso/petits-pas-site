@@ -9,7 +9,7 @@ category: "Émotions"
 image: "/images/illustration-emotions-papier.webp"
 imageAlt: "Gabriel déchire du papier pour exprimer sa frustration pendant que sa mère reste assise près de lui, calme et attentive."
 imageWidth: 700
-imageHeight: 700
+imageHeight: 640
 slug: article-emotions-trop-grandes
 readingTime: "3 min de lecture"
 ---
