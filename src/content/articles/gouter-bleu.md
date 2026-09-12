@@ -1,6 +1,6 @@
 ---
-title: "Et si le goûter n’était ni oui ni non ?"
-seoTitle: "Goûter maison : transformer une demande d’enfant sans dire non"
+title: "Quand on ne veut pas dire non, inventer une glace bleue à la maison"
+seoTitle: "Quand on ne veut pas dire non, inventer une glace bleue à la maison"
 description: "Un goûter bleu improvisé rappelle qu’entre dire oui et dire non, il existe souvent une troisième option : adapter, détourner et rendre le moment amusant."
 seoDescription: "Comment répondre à une demande de glace ou de sucrerie sans entrer dans le refus ? Une idée de goûter bleu maison pour transformer la demande en moment partagé."
 date: 2026-09-12
@@ -49,4 +49,3 @@ En gardant cette partie-là de la demande, on peut changer le reste sans transfo
 Le résultat n’est pas parfait et ce n’est pas une astuce qui fonctionnera à chaque fois. Mais ce jour-là, il n’a pas seulement accepté une alternative : il a eu l’impression de participer à la création de son propre goûter.
 
 Et parfois, c’est tout ce qu’il fallait pour que le « non » devienne une autre idée.
-
