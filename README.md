@@ -2,7 +2,7 @@
 
 Journal parental français, concret, curieux, accessible, légèrement geek et drôle.
 
-Le site est généré par Astro à partir d’articles Markdown et publié gratuitement sur GitHub Pages. Chaque push sur `main` installe les dépendances, construit `dist/` puis déploie via `.github/workflows/pages.yml`. Les builds Git reliés à Netlify sont désactivés par `netlify.toml`.
+Le site est généré par Astro à partir d’articles Markdown et publié gratuitement sur GitHub Pages. Chaque push sur `main` installe les dépendances, construit `dist/` puis déploie via `.github/workflows/pages.yml`.
 
 ## Ajouter un nouvel article
 
