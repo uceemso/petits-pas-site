@@ -16,21 +16,17 @@ readingTime: "3 min de lecture"
 
 Il faut partir. Les chaussures sont mises, le sac est prêt… et mon enfant, lui, semble avoir décidé que la voiture n’existait plus.
 
-Mon premier réflexe est rarement très sophistiqué :
-
-<div class="callout">« Allez, monte dans la voiture. On doit partir ! »</div>
-
-Et parfois, plus je répète, moins il bouge.
+Mon premier réflexe est rarement très sophistiqué. Mais parfois, plus je répète, moins il bouge.
 
 ## Alors j’essaie autre chose
 
 Au lieu de discuter du fait qu’on doit partir, je lui laisse choisir un détail :
 
-<div class="callout">« Tu veux prendre ton dinosaure ou ta petite voiture ? »</div>
+<div class="quote-pair"><div class="quote bad"><span>Mon premier réflexe</span>« Allez, monte dans la voiture. On doit partir ! »</div><div class="quote good"><span>J’essaie plutôt</span>« Tu veux prendre ton dinosaure ou ta petite voiture ? »</div></div>
 
-Ou :
+Ou encore :
 
-<div class="callout">« On y va en pas de géant ou en sautant ? »</div>
+<div class="callout highlight"><span class="callout-label">Un autre petit choix</span>« On y va en pas de géant ou en sautant ? »</div>
 
 Je ne lui demande pas **si** on va à la voiture.
 
@@ -53,19 +49,13 @@ Même quand toutes ces demandes sont parfaitement légitimes, ça fait beaucoup 
 
 Alors, quand c’est possible, j’essaie de laisser une petite marge :
 
-« Tu veux mettre ton manteau seul ou je t’aide ? »
-
-« Tu veux monter de ce côté ou de l’autre ? »
-
-« Doudou ou dinosaure pour la voiture ? »
+<div class="example-list"><p>« Tu veux mettre ton manteau seul ou je t’aide ? »</p><p>« Tu veux monter de ce côté ou de l’autre ? »</p><p>« Doudou ou dinosaure pour la voiture ? »</p></div>
 
 Pas quinze possibilités. Juste deux options que je suis réellement prête à accepter.
 
 Et j’évite :
 
-<div class="callout">« Tu veux monter dans la voiture ? »</div>
-
-si « non » n’est pas une vraie option.
+<div class="callout highlight"><span class="callout-label">À éviter si « non » n’est pas une vraie option</span>« Tu veux monter dans la voiture ? »</div>
 
 Parce qu’à trois ans, répondre « non » serait franchement assez logique.
 
@@ -73,7 +63,7 @@ Parce qu’à trois ans, répondre « non » serait franchement assez logique.
 
 Quand je sens qu’un bras de fer commence, j’essaie de me demander :
 
-**Qu’est-ce qui n’est pas négociable, et où est-ce que je peux lui laisser un peu de liberté ?**
+<div class="callout highlight"><span class="callout-label">Le petit bug à débugger</span><strong>Qu’est-ce qui n’est pas négociable, et où est-ce que je peux lui laisser un peu de liberté ?</strong></div>
 
 Ça ne marche pas à tous les coups.
 
