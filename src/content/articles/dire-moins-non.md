@@ -3,8 +3,8 @@ title: "Et si on disait moins « non » à nos enfants ?"
 seoTitle: "Poser des limites sans dire non : 3 alternatives avec les enfants"
 description: "Trois façons de poser une limite sans entrer dans le bras de fer : proposer une alternative, offrir deux choix et préserver l’intention de l’enfant."
 seoDescription: "Comment poser une limite sans entrer dans le bras de fer ? Trois alternatives concrètes au « non » pour accompagner les enfants au quotidien."
-date: 2026-09-08
-updated: 2026-09-12
+date: 2026-08-22
+updated: 2026-08-22
 category: "Discipline positive"
 image: "/images/illustration-limites.jpg"
 imageAlt: "Un grand frère joue avec un chien en peluche devant sa petite sœur dans un jardin."
