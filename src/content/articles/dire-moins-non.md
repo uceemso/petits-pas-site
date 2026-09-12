@@ -18,13 +18,9 @@ Il y a des moments où l’on sait exactement comment une situation va finir.
 
 Ce jour-là, Gabriel avait ramassé des cailloux dans le jardin. Sa petite sœur était juste à côté et je le voyais déjà venir : lui donner les cailloux, les lui lancer ou, pire encore, les lui mettre dans les mains pour qu’elle les porte directement à la bouche.
 
-La réaction la plus naturelle aurait été :
+La réaction la plus naturelle aurait été de lui dire non. Mais j’ai essayé autre chose : lui expliquer ce qu’il pouvait faire à la place.
 
-<div class="callout">« Gabriel, non ! Ne donne pas les cailloux au bébé ! »</div>
-
-Mais j’ai essayé autre chose. Je lui ai expliqué ce qu’il pouvait faire à la place :
-
-<div class="callout">« Si tu veux jouer avec les cailloux, tu peux les lancer dans ce coin, quand il n’y a personne. Et si tu veux jouer avec ta petite sœur, tu peux aller lui chercher un jouet. »</div>
+<div class="quote-pair"><div class="quote bad"><span>Le réflexe</span>« Gabriel, non ! Ne donne pas les cailloux au bébé ! »</div><div class="quote good"><span>J’ai essayé plutôt</span>« Si tu veux jouer avec les cailloux, tu peux les lancer dans ce coin, quand il n’y a personne. Et si tu veux jouer avec ta petite sœur, tu peux aller lui chercher un jouet. »</div></div>
 
 Gabriel n’a pas discuté. Il est allé chercher son petit jouet en forme de chien et s’est installé à côté de sa sœur pour jouer avec elle.
 
@@ -34,13 +30,13 @@ Et je me suis dit : voilà exactement pourquoi les alternatives fonctionnent si 
 
 Pour un jeune enfant, « ne fais pas ça » ne donne pas vraiment de solution. « Ne lance pas les cailloux » lui dit simplement où s’arrête la limite. « Tu peux lancer les cailloux dans ce coin, quand personne n’est là » lui montre ce qu’il peut faire.
 
-La limite est toujours là. Elle est simplement accompagnée d’une alternative. Et cela change souvent complètement la façon dont l’enfant la reçoit.
+<div class="callout highlight"><span class="callout-label">Le petit changement</span><strong>La limite est toujours là.</strong> Elle est simplement accompagnée d’une alternative. Et cela change souvent complètement la façon dont l’enfant la reçoit.</div>
 
 ## 2. Donner deux choix acceptables
 
 Les tout-petits ont énormément besoin de sentir qu’ils ont une certaine maîtrise de ce qu’ils font. On peut donc proposer deux options qui nous conviennent toutes les deux.
 
-<div class="callout">« Tu peux jouer avec les cailloux dans cet endroit ou aller chercher un jouet pour jouer avec ta sœur. »</div>
+<div class="callout highlight"><span class="callout-label">Deux choix acceptables</span>« Tu peux jouer avec les cailloux dans cet endroit ou aller chercher un jouet pour jouer avec ta sœur. »</div>
 
 Je ne lui laissais pas le choix de donner les cailloux au bébé. La limite était claire. Mais à l’intérieur de cette limite, il avait encore une vraie liberté de décision.
 
