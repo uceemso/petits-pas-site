@@ -48,3 +48,10 @@ Pour un encadré neutre, utiliser simplement :
 - Ne pas ajouter de nouvelles classes visuelles sans mettre à jour le système global.
 
 Le script `scripts/check-article-formatting.mjs` vérifie automatiquement ces règles avant chaque build.
+
+
+## Normalisation automatique
+
+Avant chaque build, `scripts/normalize-article-formatting.mjs` corrige les écarts simples et sans ambiguïté, notamment les citations Markdown et les citations françaises isolées, en les transformant en `callout`.
+
+Ensuite, `scripts/check-article-formatting.mjs` contrôle ce qui reste. Le build ne doit échouer que pour un problème structurel ou un choix visuel qui ne peut pas être décidé automatiquement sans risque de modifier l'intention de l'article.
