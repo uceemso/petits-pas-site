@@ -37,6 +37,13 @@ const schemas = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     {imageUrl && <meta property="og:image" content={imageUrl} />}
     <meta name="twitter:card" content={imageUrl ? 'summary_large_image' : 'summary'} />
     {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9K89PZC2X"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-R9K89PZC2X');
+    </script>
     <link rel="apple-touch-icon" href={assetUrl('/logos/apple-touch-icon.png')} />
     <meta name="apple-mobile-web-app-title" content="Petits bugs" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
