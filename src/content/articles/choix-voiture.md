@@ -3,8 +3,8 @@ title: "Monter dans la voiture sans bras de fer : le pouvoir des petits choix"
 seoTitle: "Faire monter un enfant dans la voiture sans conflit"
 description: "Quand il faut partir mais que notre enfant résiste, deux petits choix peuvent parfois transformer le bras de fer en coopération."
 seoDescription: "Pour éviter le bras de fer au moment de monter en voiture, proposer deux petits choix peut aider l’enfant à coopérer sans enlever la limite."
-date: 2026-09-12
-updated: 2026-09-12
+date: 2026-07-20
+updated: 2026-07-20
 category: "Coopération"
 image: "/images/illustration-choix-voiture.webp"
 imageAlt: "Une mère et son fils avancent vers une voiture, l’enfant tenant un dinosaure et faisant un grand pas."
