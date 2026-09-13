@@ -3,8 +3,8 @@ title: "Quand on ne veut pas dire non : inventer une glace bleue à la maison"
 seoTitle: "Quand on ne veut pas dire non : inventer une glace bleue à la maison"
 description: "Parfois, entre dire oui et dire non, il existe une troisième option : adapter l’idée, la transformer et garder la magie."
 seoDescription: "Une histoire de parentalité sur la façon de transformer une demande de glace bleue en activité créative à la maison."
-date: 2026-09-12
-updated: 2026-09-12
+date: 2026-08-12
+updated: 2026-08-12
 category: "Parentalité"
 image: "/images/illustration-gouter-bleu.webp"
 imageAlt: "Une mère et son petit garçon préparent une glace bleue maison avec du yaourt et une pomme."
