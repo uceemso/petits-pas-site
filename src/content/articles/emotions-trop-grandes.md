@@ -3,8 +3,8 @@ title: "Quand les émotions sont trop grandes pour les mots"
 seoTitle: "Aider un enfant à traverser une grosse émotion"
 description: "Quand les mots ne suffisent pas, le dessin, le jeu ou même déchirer du papier peuvent aider un enfant à traverser une grosse émotion."
 seoDescription: "Une idée simple pour aider un jeune enfant à exprimer une grosse frustration autrement que par les mots : bouger, jouer, dessiner ou déchirer du papier."
-date: 2026-09-12
-updated: 2026-09-12
+date: 2026-06-30
+updated: 2026-06-30
 category: "Émotions"
 image: "/images/illustration-emotions-trop-grandes.jpeg"
 imageAlt: "Gabriel déchire du papier pour exprimer sa frustration pendant que sa mère reste assise près de lui, calme et attentive."
